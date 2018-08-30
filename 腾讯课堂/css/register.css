@@ -1,0 +1,469 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑";
+	
+}
+
+body {
+	overflow: scroll;
+	overflow-x:hidden ;
+}
+
+
+ul {
+	list-style:none;
+}
+
+
+em{
+	font-style: normal;
+}
+i {
+	display: block;
+}
+a {
+	text-underline: none;
+}
+
+#containner {
+	width:100%;
+	height:800px;
+	background: red;
+	
+}
+ 
+#containner #containner_main{
+	min-width: 1240px;
+	height:800px;
+	background: white;
+}
+
+ #obj{
+	position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 480px;
+	overflow: hidden;
+}
+		
+#obj img{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 2;
+	opacity: 1;
+}
+
+#obj img+img{
+	z-index: 1;
+	opacity: 0;
+}
+
+#logo {
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 43px;
+    line-height: 43px;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-top: 18px;
+    font-size: 36px;
+    display: block;
+    color: #000;
+    	
+}
+
+#logo img {
+	float:left;
+}
+
+#logo  em {
+	display: block;
+	float:left;
+	margin-left: 10px;
+}
+
+#reg-area {
+	margin-left: 480px;
+    position: relative;
+    height: 100%;
+}
+
+#reg-area ul {
+	height:84px;
+	margin: 25px 0 0 340px;
+}
+
+#reg-area ul li {
+	width:85px;
+	height:84px;
+	float:left;
+	margin-right: 35px;
+	cursor: pointer;
+}
+
+#reg-area ul li .div1 {
+	border-radius: 6px;
+    background: #f54444;
+    background: linear-gradient(126deg,#fc4754,#ff794c) #f54444;
+    height: 24px;
+    line-height: 24px;
+    font-size: 15px;
+    margin: 10px 0 0 5px;
+    padding: 0 10px 0 24px;
+    color: #fff;
+    font-weight: 300;
+	cursor: pointer;
+}
+
+#reg-area ul li.li1 {
+	position: relative;
+	width:95px;
+	float:left;
+	z-index: 10;
+}
+
+#reg-area ul li.li1 img {
+	position: absolute;
+	top:0px;
+	left:0;
+}
+
+#reg-area ul li.li1 .hide {
+	position: absolute;
+	left:-201px;
+	width:295px;
+	height:116px;
+	border:1px solid #f0f0f0;
+	box-shadow: 0 0 8px #f0f0f0;
+	border-radius: 4px;
+	display: none;
+	z-index: 10;
+	background: #fff;
+}
+
+#reg-area ul li.li1 .hide input {
+	width:240px;
+	height:40px;
+	line-height:40px;
+	color:#AAAAAA;
+	border:1px solid #f0f0f0;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	padding-left:10px;
+	float:left;
+}
+
+#reg-area ul li.li1 .hide button {
+	width:45px;
+	height:42px;
+	border-radius: 0 6px 0 0;
+	border:none;
+	margin-top: -1px;
+	border-bottom:1px solid #f0f0f0;
+	background: #fff;
+	border:1px solid #f0f0f0;
+	float:left;
+
+}
+
+
+#reg-area ul li.li1 .hide button i {
+	color:#666;
+}
+
+#reg-area ul li.li1 .hide  p {
+	line-height:70px;
+	text-align: center;
+}
+
+#reg-area ul li.li1 .hide  p a {
+	text-decoration: none;
+	color:#359eff;
+	margin-right: 10px;
+}
+
+#reg-area ul li.li1 .hide button:hover {
+	background: #FD5253;
+}
+
+#reg-area ul li.li1 .hide button:hover i {
+	color:#fff;
+}
+
+#reg-area ul li.li1:hover .hide{
+	display: block;
+}
+
+#reg-area ul li.li2 {
+	width:90px;
+	height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+	float:left;
+	font-weight: normal;
+	font-family: "宋体";
+}
+
+#reg-area ul li.li2 i {
+	font-size: 25px;
+	color:#666;
+	float:left;
+	
+}
+
+#reg-area ul li.li2 em {
+	display: block;
+	float:left;
+	margin-left: 3px;
+	color:#666;
+	
+}
+#reg-area ul li.li2:hover em{
+	color:black;
+}
+#reg-area ul li.li2:hover i{
+	color:black;
+}
+
+#reg-area ul li.li3 {
+	position: relative;
+	width:90px;
+	height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+    font-weight: normal;
+	float:left;
+	color:#666;
+}
+
+#reg-area ul li.li3 span {
+	display: block;
+	float:left;
+}
+
+#reg-area ul li.li3 em {
+	display: block;
+	width:12px;
+	height:8px;
+	background:url("../img/reg_down.png");/*#D1D1D1*/
+	margin:18px 0 0 6px;
+	float:left;
+}
+
+#reg-area ul li.li3:hover {
+	color:black;
+}
+
+#reg-area ul li.li3:hover em{
+	background:url("../img/reg_up.png");
+}
+
+#reg-area ul li.li3 .hide {
+	width:90px;
+	height:50px;
+	position: absolute;
+	top:20px;
+	text-align: left;
+	display: none;
+}
+
+#reg-area ul li.li3 .hide a {
+	display: block;
+	text-decoration: none;
+	color:#666;
+	margin:20px 0 0 0;
+}
+#reg-area ul li.li3 .hide a:hover {
+	color:black;
+}
+
+#reg-area ul li.li3:hover .hide{
+	display: block;
+	
+}
+
+#reg-area  .biger_title {
+	position: relative;
+	font-size: 44px;
+	margin:0 0 0 150px;
+	z-index:2;
+}
+
+#reg-area  .big_title {
+	font-size: 28px;
+    margin:20px 0 64px 150px;
+    line-height: 1.2;
+    color: #333;
+    float:left;
+}
+
+#reg-area  a.free_number {
+	font-size: 24px;
+    margin:22px 0 64px 150px;
+    line-height: 1.2;
+    color: #359EFF;
+    float:left;
+    text-decoration: none;
+}
+
+#reg-area  a.free_number:hover {
+	color:#3487FF;
+}
+
+#reg-area  form .reg_nickname {
+	width: 465px;
+	height:54px;
+	font-size: 20px;
+	border:1px solid #2B72FF;
+	margin:0 0 0px 155px;
+	border-radius:5px ;
+	color:#D1D1D1;
+	font-weight: normal;
+	font-family: "宋体";
+	padding:0 0 0 25px;
+	
+
+}
+
+#reg-area #tel {
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+
+#reg-area #yzm {
+	width:153px;
+	border:1px solid #666;
+	
+	float:left;
+}
+
+#reg-area #yzmButton {
+	width: 291px;
+	float:left;
+	margin:0 0 0 0;
+	background-image: linear-gradient(0deg,#398bff,#3083ff);
+	border:none;
+	margin:0px 0 0 20px;
+	color:white;
+	font-size: 20px;
+}
+
+#reg-area #submit {
+	width:490px;
+	background-image: linear-gradient(0deg,#398bff,#3083ff);
+	border:none;
+	color:white;
+	font-size: 20px;
+	margin-top: 50px;
+}
+
+/*写出正则表达式，验证*/
+
+#reg-area #nicknameId {
+	margin:10px 0 40px 158px;
+	/*display: none;*/
+}
+#reg-area #pwdId {
+	margin:10px 20px 20px 158px;
+	/*display: none;*/
+}
+
+#reg-area #telId{
+	margin:0px 20px 30px 158px;
+}
+
+.wrapper {
+	width:400px;
+	height:30px;
+}
+
+.checkbox-box {
+	position:relative;
+	top:0;
+	left:0;
+	width:18px;
+	height:18px;
+	background:url("../img/checkbox_normal.png") no-repeat;
+	z-index:10;
+	float:left;
+	margin:30px 0 0 155px;
+	float:left;
+}
+
+.checkbox-box input {
+	opacity:0;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:100;
+	float:left;
+}
+
+.checkbox-box span {
+	display:block;
+	width:18px;
+	height:18px;
+	background:url("../img/checkbox_check.png") no-repeat;
+}
+
+.checkbox-box input[type="checkbox"] +span {
+	opacity:0;
+
+}
+
+.checkbox-box input[type="checkbox"]:checked +span {
+	opacity:1;
+
+}
+
+
+ 
+
+.checkbox-box input[type="checkbox"]:checked +span {
+	opacity:1;
+
+}
+
+.wrapper .check_p {
+	float:left;
+	margin:28px 0 0 0px;
+    color: #aaa;
+}
+
+ .wrapper_down {
+	width:12px;
+	height:8px;
+	background:url("../img/reg_down.png") no-repeat;
+	float:left;
+	margin:2px 0 0 8px;
+	cursor: pointer;	
+}
+
+.wrapper_hide {
+	width:120px;
+	font-size: 12px;
+	clear: both;
+	margin:30px 0 30px -320px;
+	float:left;
+	display: none;
+}
+
+.wrapper_hide a {
+	text-decoration: none;
+	font-size: 15px;
+	color:#3CA1FF;
+}
+
+.wrapper_hide a:hover {
+	color:#666;
+}

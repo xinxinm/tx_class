@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>数据化运营实战_腾讯课堂</title>
+		<link rel="shortcut icon" href="img/tengxun_shortlogo.ico" />
+		<link rel="stylesheet" type="text/css" href="css/course.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/alertWindow.js"></script>
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/course.js"></script>
+		<!--写头部的特效-->
+		<style>
+			/*阿里图标*/
+			
+			@font-face {
+				font-family: 'iconfont';
+				src: url('tengxun_header/iconfont.eot');
+				src: url('tengxun_header/iconfont.eot?#iefix') format('embedded-opentype'), 				url('tengxun_header/iconfont.woff') format('woff'), url('tengxun_header/iconfont.ttf') 				format('truetype'), url('tengxun_header/iconfont.svg#iconfont') format('svg');
+			}
+			
+			@font-face {
+				font-family: 'iconfont';
+				src: url('other/iconfont.eot');
+				src: url('other/iconfont.eot?#iefix') format('embedded-opentype'), 				url('other/iconfont.woff') format('woff'), url('other/iconfont.ttf') 				format('truetype'), url('other/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 18px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		</style>
+	</head>
+	
+	<body>
+			<!--登陆弹窗-->
+		<div id="fix_submit">
+			<i class="iconfont" id="close_Btn">&#xe602;</i>
+			<div id="check_view">
+				<ul>
+					<li class="li1">
+						<i class="iconfont" id="QQ_Icon">&#xe613;</i>
+						<p>QQ账号登陆</p>
+					</li>
+					<li class="li2">
+						<i class="iconfont" id="weChat_Icon">&#xe63d;</i>
+						<p>微信账号登陆</p>
+					</li>
+				</ul>
+			</div>
+			<!--	/*使用QQ*/-->
+			<div class="show_view">
+				<p class="p_intro" style="font-size:14px;text-align: center;padding: 10px 0 0 0;">
+					微信和QQ是两个独立账号，账号信息不互通
+				</p>
+
+				<p class="safe">
+					快速安全登陆
+				</p>
+
+				<p class="kown">请用
+					<a href="#">QQ手机版</a>扫描二维码安全登陆，防止盗号</p>
+
+				<div class="sm">
+					<img src="img/sm.png">
+
+					<div class="sm_move">
+						<img src="img/sm_move.png">
+					</div>
+
+				</div>
+
+				<div class="view_click">
+					<ul>
+						<li>
+							<a href="#">账号密码登陆</a> |</li>
+						<li>
+							<a href="register.html">注册新账号</a> |</li>
+						<li>
+							<a href="#">意见反馈</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<!--/*使用微信*/-->
+			<div class="show_view2">
+				<p style="text-align: center;float:left;margin: 0 0px 18px 161px;">
+					微信和QQ是两个独立账号，账号信息不互通
+				</p>
+
+				<p class="safe" style="clear:both">
+					快速安全登陆
+				</p>
+
+				<p class="kown" style="font-size:13px;font-weight:bold;">安全登陆防止被盗</p>
+
+				<div class="sm2">
+					<img src="img/sm.png">
+				</div>
+
+				<p class="kown2">请使用微信扫描二维码登录“腾讯课堂”</p>
+
+			</div>
+
+			<!--/*账号登陆*/-->
+			<div class="show_view3">
+				<p style="text-align: center;float:left;margin: 0 0px 18px 161px;">
+					微信和QQ是两个独立账号，账号信息不互通
+				</p>
+
+				<p class="safe" style="clear:both">
+					账号密码登陆
+				</p>
+
+				<p class="kown" style="font-size:13px;font-weight:bold;">推荐使用快速安全登录，防止盗号。</p>
+
+				<form action="#">
+					<input type="text" name="user" class="input_user" placeholder="支持QQ号/邮箱/手机账号登陆" /><br/>
+					<input type="password" name="pwd" class="input_pwd" placeholder="密码" /><br/>
+					<input type="submit" class="submit" value="登陆">
+				</form>
+
+			</div>
+		</div>
+		
+		
+		<div id="header" style="background: white;height:52px;">
+			<div id="header_main" style="height:52px;">
+				<div class="logo">
+					<a href="#"></a>
+				</div>
+				
+				<ul class="nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="#">课程</a></li>
+					<li><a href="#">精选合辑</a></li>
+					<li><a href="#">学团</a></li>
+				</ul>
+				
+				<div class="serch">
+					<form action="" method="post">
+						<input type="text" name="serch" class="serch-text" placeholder="搜索课程" />
+						<div class="swith_class">
+							<span>课程</span>
+							<em></em>
+							<div class="line"></div>
+							<div class="hide">
+								<span>机构</span>
+							</div>	
+						
+							<div class="serch_button">
+								<i class="iconfont">&#xe606;</i>
+							</div>
+						</div>
+					</form>
+				</div>
+				
+				<p class="help_nav">
+					<a href="#" class="sub_Btn">登陆</a>|
+					<a href="#" style="margin-left: 10px;">帮助</a>
+				</p>
+		</div>
+		
+		
+		<!--
+        	作者：offline
+        	时间：2017-09-04
+        	描述：头部结束
+        -->
+        
+        <div id="study-info">
+        	<div id="study-info-main">
+        		<div class="play-class">
+        			<img src="img/net01.jpg" />
+        			<div class="sound"></div>
+        			<div class="round">
+        				<Button class="playingBtn"></div>
+        					<p class="heard">试听</p>
+        		</div>
+        		
+    			<div class="course-info">
+    				<p class="title-p">数据化运营实战</p>
+    				<ul class="kown_info">
+    					<li class="buy-class">
+    						<span>1人 购买</span>
+    						<em>|</em>
+    					</li>
+    					
+    					<li class="judge-class">
+    						<span>好评度</span>
+    						<em>|</em>
+    					</li>
+    					
+    					<li class="share-class">
+    						<i class="iconfont">&#xe64a;</i>
+    						<a href="#">分享</a>
+    					</li>
+    					<li class="collect-class">
+    						<i class="iconfont">&#xe72d;</i>
+    						<a href="#">收藏</a>
+    					</li>
+    				</ul>
+    				
+    				<div class="basic-class">
+    					<div class="clear-line"></div>
+    					<span class="classify-class">基础班</span>
+    					<p class="need-kown">支持随到随学，18年12月过期</p>
+    				</div>
+    				
+    				<div class="price-class">
+    					<span>¥ 29.90</span>
+    				</div>
+    				
+    				<Button class="now_study">立即学习</Button>
+    				<Button class="now_consult">立即咨询</Button>
+    			</div>
+        	</div>
+        	
+        	 <div id="notes">
+        	 	<form action="#" method="post">
+        	 		<textarea class="text_area" placeholder="您可以在这里记录笔记" maxlength="300"></textarea>
+        	 		<p id="numtj">你还可以输入<var class="textColor"></var>个字符</p>
+        	 		<input type="submit" value="点击保存" class="submit">
+        	 	</form>
+        	 </div>
+        </div>
+        
+        
+       
+   	</div>
+	</body>
+	</html>
+

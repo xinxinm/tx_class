@@ -1,0 +1,432 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑";
+	
+}
+
+body {
+	overflow: scroll;
+	overflow-x:hidden ;
+}
+
+ul {
+	list-style:none;
+}
+
+
+em{
+	font-style: normal;
+}
+i {
+	display: block;
+}
+a {
+	text-underline: none;
+}
+
+#header {
+	width:100%;
+	height:51px;
+	border-bottom:1px solid #E0E0E0;
+	background: white;
+}
+
+#header  #header_main {
+	width:1200px;
+	height:51px;
+	background: white;
+	margin:0 auto;
+	
+}
+#header  #header_main .logo {
+	width: 142px;
+    height: 50px;
+	float:left;
+}
+
+#header  #header_main .logo a {
+    display: block;
+    width: 142px;
+    height: 50px;
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+	background: url("../img/course-logo.png")no-repeat;
+}
+
+#header  #header_main ul.nav {
+	float:left;
+	margin-left:50px;
+}
+
+#header  #header_main ul.nav li{
+	float:left;
+	line-height:51px;
+	margin-right:20px;
+	
+}
+
+#header  #header_main ul.nav li a {
+	
+	color:black;
+	text-decoration: none;
+}
+
+/*搜索框*/
+#header  #header_main .serch {
+	position:relative;
+	width:241px;
+	height:30px;
+	float:left;
+	margin-left:300px;
+	margin-top:10px;
+}
+
+
+#header  #header_main .serch form .serch-text {
+	widows: 166px;
+	height:30px;
+	border:1px solid #188EEE;	
+	padding:0 0 0 75px;
+}
+
+#header  #header_main .serch form .swith_class {
+	position: absolute;
+	top:1px;
+	left:1px;
+	width:67px;
+	height:30px;
+	background: white;
+	cursor: pointer;
+}
+
+#header  #header_main .serch form .swith_class span {
+	line-height:30px;
+	font-size:12px;
+	margin:0 0 0 15px;
+	float:left;
+}
+
+
+#header  #header_main .serch form .swith_class  em {
+	display: blcok;
+ 	width: 0px;
+    height: 0px;
+    border: 5px solid #666;
+	border-bottom:none;
+	border-left-color:transparent;
+	border-right-color:transparent;
+	margin-top: 10px;
+	margin-left: 5px;
+	float:left;
+} 
+#header  #header_main .serch form .swith_class .line {
+	position: absolute;
+	top:6px;
+	right:0;
+	width:1px;
+	height:20px;
+	background: #E0E0E0;
+}
+
+#header  #header_main .serch  form  .swith_class .hide {
+	position: absolute;
+    top: 24px;
+    left: -1px;
+    width: 66px;
+    height: 26px;
+    background: white;
+    border: 1px solid #666;
+    color:#666;
+    border-top: 1px solid #fff;
+	display: none;
+}
+
+#header  #header_main .serch  form  .swith_class .hide:hover {
+	background: #EEEEEE;
+	
+}
+
+
+#header  #header_main .serch form .swith_class .serch_button {
+	position: relative;
+    width: 40px;
+    height: 30px;
+    margin-top: -1px;
+    background: #188EEE;
+    left: 187px;
+    top: 1px;
+}
+
+#header  #header_main .serch form .swith_class .serch_button i {
+	position: absolute;
+	display: block;
+	color:white;
+	font-size:20px;
+	margin:5px 10px;
+}
+
+#header  #header_main .serch form .swith_class:hover {
+	background: #EEEEEE;
+	
+}
+
+#header  #header_main  .help_nav {
+	display: inline;
+	color: #333;
+	line-height:52px;
+	margin-left:100px;
+}
+
+#header  #header_main  .help_nav a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #333;
+	margin-right: 12px;
+	
+}
+
+/*学习图片等信息*/
+
+#study-info {
+	wdith:100%;
+	height:340px;
+	margin:50px 0 0 0;
+}
+
+#study-info #study-info-main {
+	width:1200px;
+	height:340px;
+	margin:0 auto;
+	
+}
+
+#study-info #study-info-main .play-class {
+	position: relative;
+	height:340px;
+	z-index: 1;
+	float:left;
+}
+
+#study-info #study-info-main .play-class img{
+	height:340px;
+}
+
+#study-info #study-info-main .play-class .sound {
+	position: absolute;
+	top:0;
+	left:0;
+	width:603px;
+	height:340px;
+	background: rgba(0,0,0,0.5);
+	z-index:10;
+	
+}
+
+#study-info #study-info-main .play-class .round {
+	position: absolute;
+	top:100px;
+	left:250px;
+	width:82px;
+	height:82px;
+	border-radius: 50%;
+	z-index:100;
+	border:8px solid #fff;
+	
+}
+
+#study-info #study-info-main .play-class .playingBtn {
+	position: absolute;
+	top:20px;
+	left:25px;
+	width:30px;
+	height:40px;
+	background: url("../img/play.png");
+	border:none;
+	cursor: pointer;
+}
+
+#study-info #study-info-main .play-class .heard {
+		position: absolute;
+		top:205px;
+		left:275px;
+		z-index:100;
+		color:white;
+		font-size:22px;
+}
+
+#study-info #study-info-main .course-info {
+	width:596px;
+	height:340px;
+	float:left;
+}
+
+#study-info #study-info-main .course-info  p.title-p {
+	font-size: 22px;
+	margin:0 0 0 30px;
+}
+
+#study-info #study-info-main .kown_info {
+	margin:15px 0 0 30px;
+	
+}
+
+#study-info #study-info-main .kown_info li {
+	font-size:13px;
+	color: #999;
+	float:left;
+	margin-right:20px;
+	    
+}
+
+#study-info #study-info-main .kown_info li span {
+	display: block;
+	float:left;
+	
+}
+
+
+#study-info #study-info-main .kown_info li em {
+	display: block;
+	float:left;
+	margin-left: 20px;
+}
+
+#study-info #study-info-main .kown_info .share-class i {
+	float:left;
+	
+}
+
+#study-info #study-info-main .kown_info .share-class a {
+	float:left;
+	text-decoration: none;
+	color:#666;
+	margin:2px 0 0 5px;
+}
+
+#study-info #study-info-main .kown_info .collect-class i {
+	float:left;
+	
+}
+
+#study-info #study-info-main .kown_info .collect-class a {
+	float:left;
+	text-decoration: none;
+	color:#666;
+	margin:0px 0 0 5px;
+}
+
+#study-info #study-info-main  .basic-class {
+	position: relative;
+	width:580px;
+	height:48px;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	clear: both;
+	margin:50px 0 20px 30px;
+	
+}
+
+#study-info #study-info-main  .basic-class .clear-line {
+	position: absolute;
+    top: -1px;
+    left: 19px;
+    width: 50px;
+    height: 1px;
+    background: #fff;
+}
+
+#study-info #study-info-main  .basic-class span.classify-class {
+	position: absolute;
+    top: -10px;
+    left: 19px;
+    width: 50px;
+    height: 1px;
+    background: #fff;
+	
+}
+
+#study-info #study-info-main  .basic-class p.need-kown {
+	margin: 14px 19px;
+    font-size: 13px;
+}
+
+#study-info #study-info-main  .price-class {
+	width:580px;
+	height:48px;
+	background: #F4F4F4;
+	margin:0px 0 20px 30px;
+	line-height: 48px;
+}
+
+#study-info #study-info-main  .price-class span {
+	display: block;
+	font-size: 20px;	
+	color:red;
+	margin-left: 10px;
+	
+}
+
+#study-info #study-info-main  .now_study {
+	width:150px;
+	height:50px;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+    background: #188EEE;
+    color:white;
+    margin-left:30px;
+	
+}
+
+#study-info #study-info-main  .now_consult {
+	width:150px;
+	height:50px;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    border:1px solid  #188EEE;
+    border-radius: 2px;
+    background: none;
+    color:#188EEE;
+    margin-left:30px;
+	
+}
+#notes {
+	width:1200px;
+	height:300px;
+	background: #F4F4F4;
+	margin: 30px auto;
+}
+ 
+#notes .text_area {
+	width:1198px;
+	height:200px;
+	background: #fff;
+}
+
+#notes .submit {
+	width:150px;
+	height:50px;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    border:1px solid  #188EEE;
+    border-radius: 2px;
+    background: none;
+    color:#188EEE;
+    margin:10px 0;
+	
+}
+
+#notes  #numtj {
+	font-size:16px;
+	color:#188EEE;
+	
+}

@@ -1,0 +1,138 @@
+body {
+	overflow: scroll;
+	overflow-y:hidden ;
+	overflow-x:hidden ;
+}
+
+#personal_middle {
+	width:100%;
+	height:800px;
+	background: #F4F4F4;
+	
+}
+
+#personal_middle  #personal_middle_main {
+	width:1200px;
+	height:800px;
+	margin:0px auto;
+	padding:50px 0 0 0;
+}
+
+
+#personal_middle   #personal_middle_main .nav {
+	position: relative;
+	width:190px;
+	height:380px;
+	background: white;
+	border:1px solid #999;
+	float:left;
+}
+
+#personal_middle   #personal_middle_main .nav ul li {
+	position:relative;
+	width:170px;
+	height:47px;
+	line-height:50px;
+	padding-left:20px;
+	font-size:13px;
+	background: white;
+	cursor: pointer;
+}
+
+#personal_middle   #personal_middle_main .nav ul li .blue_bar {
+	position: absolute;
+	top:0;
+	left:0;
+	width:4px;
+	height:47px;
+	background: #E5E5E5;
+	display: none;
+}
+
+.add_bluebar {
+	position: absolute;
+	top:0;
+	left:0;
+	width:4px;
+	height:47px;
+	background: #039AE1;
+}
+
+#personal_middle   #personal_middle_main .nav ul li:hover {
+	background:#F8F8F8 ;
+}
+
+#personal_middle   #personal_middle_main .nav ul li:hover span {
+	margin-left:10px;
+}
+
+#personal_middle   #personal_middle_main .nav ul li:hover .blue_bar {
+	display: block;	
+}
+
+#personal_middle   #personal_middle_main .nav  .hide {
+	position: fixed;
+    width: 800px;
+    height:385px;
+    background: white;
+    top: 102px;
+    left: 320px;
+    display: none;
+}
+
+#personal_middle   #personal_middle_main .nav  .hide .title_p {
+	height:30px;
+	line-height: 30px;
+	background: #039AE1;
+	color:white;
+	padding-left:10px;
+}
+
+#personal_middle   #personal_middle_main .nav  .hide .ridio_sex {
+	width:100px;
+}
+
+
+#personal_middle   #personal_middle_main .nav  .hide .switch_sex {
+	float:left;
+	
+}
+
+#personal_middle   #personal_middle_main .nav  .hide .switch_birth {
+	position: absolute;
+	top:60px;
+	
+	
+}
+#personal_middle   #personal_middle_main .nav  .hide .info_submit {
+	position: absolute;
+    top: 136px;
+    left: 11px;
+	background: #fff;
+	width:192px;
+	height:46px;
+	line-height: 46px;
+	text-align: center;
+	border:1px solid #039AE1;
+	border-radius: 3px;
+	color:#039AE1;
+}
+
+#personal_middle   #personal_middle_main .nav  .hide .user {
+	font-size:18px;
+	font-family: "微软雅黑";
+	margin:0 0 0 5px;
+}
+
+#personal_middle   #personal_middle_main .nav  .hide .pwd_p {
+	float:left;
+	
+}
+
+#personal_middle   #personal_middle_main .nav  .hide  .old_psw {
+	width:180px;
+	height:30px;
+	border:1px solid #039AE1;
+	margin-top:10px;
+	float:left;
+}

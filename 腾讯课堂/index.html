@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>腾讯课堂_专业的在线教育平台</title>
+		<link rel="shortcut icon" href="img/tengxun_shortlogo.ico" />
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+		<!--写头部的特效-->
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/banner.js"></script>
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/alertWindow.js"></script>
+		<script type="text/javascript" src="js/toTop.js"></script>
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/middle_nav.js"></script>
+		<style>
+			/*阿里图标*/
+			
+			@font-face {
+				font-family: 'iconfont';
+				src: url('tengxun_header/iconfont.eot');
+				src: url('tengxun_header/iconfont.eot?#iefix') format('embedded-opentype'), 				url('tengxun_header/iconfont.woff') format('woff'), url('tengxun_header/iconfont.ttf') 				format('truetype'), url('tengxun_header/iconfont.svg#iconfont') format('svg');
+			}
+			
+			@font-face {
+				font-family: 'iconfont';
+				src: url('fixed_icon/iconfont.eot');
+				src: url('fixed_icon/iconfont.eot?#iefix') format('embedded-opentype'), 				url('fixed_icon/iconfont.woff') format('woff'), url('fixed_icon/iconfont.ttf') format('truetype'), 				url('fixed_icon/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 18px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--登陆弹窗-->
+		<div id="fix_submit">
+			<i class="iconfont" id="close_Btn">&#xe602;</i>
+			<div id="check_view">
+				<ul>
+					<li class="li1">
+						<i class="iconfont" id="QQ_Icon">&#xe613;</i>
+						<p>QQ账号登陆</p>
+					</li>
+					<li class="li2">
+						<i class="iconfont" id="weChat_Icon">&#xe63d;</i>
+						<p>微信账号登陆</p>
+					</li>
+				</ul>
+			</div>
+			<!--	/*使用QQ*/-->
+			<div class="show_view">
+				<p class="p_intro" style="font-size:14px;text-align: center;padding: 10px 0 0 0;">
+					微信和QQ是两个独立账号，账号信息不互通
+				</p>
+
+				<p class="safe">
+					快速安全登陆
+				</p>
+
+				<p class="kown">请用
+					<a href="#">QQ手机版</a>扫描二维码安全登陆，防止盗号</p>
+
+				<div class="sm">
+					<img src="img/sm.png">
+
+					<div class="sm_move">
+						<img src="img/sm_move.png">
+					</div>
+
+				</div>
+
+				<div class="view_click">
+					<ul>
+						<li>
+							<a href="#">账号密码登陆</a> |</li>
+						<li>
+							<a href="register.html">注册新账号</a> |</li>
+						<li>
+							<a href="#">意见反馈</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<!--/*使用微信*/-->
+			<div class="show_view2">
+				<p style="text-align: center;float:left;margin: 0 0px 18px 161px;">
+					微信和QQ是两个独立账号，账号信息不互通
+				</p>
+
+				<p class="safe" style="clear:both">
+					快速安全登陆
+				</p>
+
+				<p class="kown" style="font-size:13px;font-weight:bold;">安全登陆防止被盗</p>
+
+				<div class="sm2">
+					<img src="img/sm.png">
+				</div>
+
+				<p class="kown2">请使用微信扫描二维码登录“腾讯课堂”</p>
+
+			</div>
+
+			<!--/*账号登陆*/-->
+			<div class="show_view3">
+				<p style="text-align: center;float:left;margin: 0 0px 18px 161px;">
+					微信和QQ是两个独立账号，账号信息不互通
+				</p>
+
+				<p class="safe" style="clear:both">
+					账号密码登陆
+				</p>
+
+				<p class="kown" style="font-size:13px;font-weight:bold;">推荐使用快速安全登录，防止盗号。</p>
+
+				<form action="#">
+					<input type="text" name="user" class="input_user" placeholder="支持QQ号/邮箱/手机账号登陆" /><br/>
+					<input type="password" name="pwd" class="input_pwd" placeholder="密码" /><br/>
+					<input type="submit" class="submit" value="登陆">
+				</form>
+
+			</div>
+		</div>
+
+		<!--
+        	作者：offline
+        	时间：2017-08-30
+        	描述：右侧固定栏开始
+        -->
+
+		<div id="fix_scroll">
+			<div id="toTop">
+				<i class="iconfont">&#xe630;</i>
+				<div class="hide"></div>
+			</div>
+
+			<div id="appSm">
+				<i class="iconfont">&#xe634;</i>
+				<p>APP下载</p>
+				<div class="hide">
+					<div class="download_sm"></div>
+					<ul>
+						<li>腾讯课堂APP</li>
+						<li>随时随地轻松学</li>
+					</ul>
+					<em></em>
+					<div class="toRight">></div>
+				</div>
+			</div>
+
+			<div id="write" onclick="window.open();">
+				<i class="iconfont">&#xe611;</i>
+				<p>问题反馈</p>
+			</div>
+		</div>
+
+<div id="header">
+	<div id="header_main">
+		<!--这是头部居中-->
+		<div id="header_main_left">
+			<div class="header_main_logo"></div>
+			<!--首页logo-->
+		</div>
+		
+		<div id="header_main_right">
+			<div class="header_main_serch">
+				<div class="header_main_class">
+					<!--显示的是课程-->
+					<p>课程</p>
+					<i class="iconfont" id="iconfont1">&#xe601;</i>
+					<!--需要待补充向下-->
+					<i class="iconfont" id="iconfont2">&#xe600;</i>
+					<!--需要待补充向上-->
+					<div class="hide">
+						<p>机构</p>
+					</div>
+				</div>
+
+				<form action="#" method="post">
+					<input type="text" class="head_serch_text" name="serch" placeholder="搜索课程" maxlength="38" />
+					<div class="serch_button" onclick="window.open()">
+						<i class="iconfont">&#xe606;</i>
+					</div>
+				</form>
+			</div>
+			
+			<ul class="header_ul">
+				<!--写出下拉列表-->
+				<li>
+					<a href="#" style="">企业合作</a>
+				</li>
+				
+				<li>
+					<a href="#">分销课程</a>
+				</li>
+				
+				<li class="li2">
+					<a href="#">我要讲课</a>
+					<i class="iconfont" id="li2_iconfont1">&#xe601;</i>
+					<!--需要待补充向下-->
+					<i class="iconfont" id="li2_iconfont2">&#xe600;</i>
+					<!--需要待补充向上-->
+					<div class="hide">
+						<ul>
+							<li>
+								<a href="#">教育机构开课</a>
+							</li>
+							<li>
+								<a href="#">个人老师开课</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				
+				<li>
+					<a href="#">登录</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+		<!--腾讯课堂头部结束，腾讯课堂中部开始-->
+		<div id="middle">
+			<!--焦点图-->
+			<div id="obj">
+				<div id="btnleft" class="btn">
+					<</div>
+						<div id="btnright" class="btn">></div>
+						<ul id="btns"></ul>
+						<ul id="oul">
+							<li><img src="img/banner01.png"></li>
+							<li><img src="img/banner02.jpg"></li>
+							<li><img src="img/banner03.jpg"></li>
+							<li><img src="img/banner04.png"></li>
+							<li><img src="img/banner05.jpg"></li>
+							<li><img src="img/banner06.jpg"></li>
+							<li><img src="img/banner07.jpg"></li>
+						</ul>
+
+				</div>
+
+				<div id="obj_nav">
+					<ul>
+						<li>
+							<a a href="#" class="title_a">IT·互联网</a>
+							<p>
+								<a href="#">前段开发</a>
+								<a href="#">Java</a>
+							</p>
+							<em>></em>
+							<div class="hide">
+								<!--IT-->
+								<ul>
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">互联网产品</a>
+										<p>
+											<a href="#" style="margin-left: 35px;">产品策划</a>
+											<a href="#">游戏策划</a>
+											<a href="#">产品运营</a>
+											<a href="#">游戏运营</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">互联网营销</a>
+										<p>
+											<a href="#" style="margin-left: 35px;">网络营销理论</a>
+											<a href="#">淘宝营销</a>
+											<a href="#">微信营销</a>
+											<a href="#">SEO</a>
+											<a href="#">新媒体营销</a>
+											<a href="#">SEM</a>
+											<a href="#">电子营销</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">编程语言</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">C</a>
+											<a href="#">C++</a>
+											<a href="#">Java</a>
+											<a href="#">PHP</a>
+											<a href="#">C#/.Net</a>
+											<a href="#">Python</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">前端开发</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">HTML/CSS</a>
+											<a href="#">JavaScript</a>
+											<a href="#">jQuery</a>
+											<a href="#">Web全栈开发</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">网络与运维</a>
+										<p>
+											<a href="#" style="margin-left: 36px;">Linux运维</a>
+											<a href="#">Python自动化运维</a>
+											<a href="#">DevOps</a>
+											<a href="#">信息安全</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">游戏开发</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">Unity3d游戏开发</a>
+											<a href="#">Cocos2d-x游戏开发</a>
+											<a href="#">游戏服务器开发</a>
+											<a href="#">Html5游戏</a>
+											<a href="#">VR/AR</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">软件研发</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">敏捷开发</a>
+											<a href="#">软件测试</a>
+											<a href="#">软件研发</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">云计算大数据</a>
+										<p>
+											<a href="#" style="margin-left: 20px;">云计算</a>
+											<a href="#">大数据</a>
+											<a href="#">数据库</a>
+											<a href="#">人工智能</a>
+											<a href="#">Hadoop开发</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">硬件研发</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">嵌入式开发</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">认证考试</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">IT认证</a>
+											<a href="#">计算机基础</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<a a href="#" class="title_a">设计·创作</a>
+							<!--设计-->
+							<p>
+								<a href="#">平面设计</a>
+								<a href="#">UI设计</a>
+							</p>
+							<em>></em>
+							<div class="hide">
+								<ul>
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">平面设计</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">网页美工</a>
+											<a href="#">摄影后期</a>
+											<a href="#">广告海报</a>
+											<a href="#">综合平面设计</a>
+											<a href="#">VI设计</a>
+											<a href="#">淘宝美工</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">UI设计</a>
+										<p>
+											<a href="#" style="margin-left: 66px;">交互设计</a>
+											<a href="#">游戏UI设计</a>
+											<a href="#">Web UI设计</a>
+											<a href="#">APP UI设计</a>
+											<a href="#">图标设计</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">设计软件</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">PhotoShop</a>
+											<a href="#">Indesign</a>
+											<a href="#">Axure</a>
+											<a href="#">CDR</a>
+											<a href="#">lllustrator</a>
+											<a href="#">Dreamweaver</a>
+											<a href="#">CAD</a>
+											<a href="#">UG</a>
+										</p>
+										<p style="height: 30px;line-height: 30px;margin-top: -10px;">
+											<a href="#" style="margin-left: 115px;">Solidworks</a>
+											<a href="#">Sketchup</a>
+											<a href="#">Rhino3D</a>
+											<a href="#">Pro/E</a>
+											<a href="#">ZBrush</a>
+											<a href="#">Cinema 4D</a>
+											<a href="#">SAI</a>
+											<a href="#">Flash</a>
+										</p>
+										<p style="height: 30px;line-height: 30px;">
+											<a href="#" style="margin-left: 115px;">3DMAX</a>
+											<a href="#">MAYA</a>
+											<a href="#">VRay</a>
+											<a href="#">AE</a>
+											<a href="#">Premiere</a>
+											<a href="#">Firere</a>
+											<a href="#">其他</a>
+										</p>
+									</li>
+									<br/>
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">游戏动画设计</a>
+										<p>
+											<a href="#" style="margin-left: 20px;">场景概念设计</a>
+											<a href="#">游戏模型设计</a>
+											<a href="#">动画设计</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">绘画创作</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">插画漫画</a>
+											<a href="#">国画油画</a>
+											<a href="#">水彩水粉画</a>
+											<a href="#">素描</a>
+											<a href="#">手绘其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">影视后期设计</a>
+										<p>
+											<a href="#" style="margin-left: 20px;">影视特效</a>
+											<a href="#">后期合成</a>
+											<a href="#">后期剪辑</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">环境艺术设计</a>
+										<p>
+											<a href="#" style="margin-left: 20px;">室内设计</a>
+											<a href="#">建筑设计</a>
+											<a href="#">景观设计</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">工业产品设计</a>
+										<p>
+											<a href="#" style="margin-left: 20px;">产品设计</a>
+											<a href="#">模具设计</a>
+											<a href="#">机械设计</a>
+											<a href="#">包装设计</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">服装设计</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">服装设计打板</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">其他</a>
+										<p>
+											<a href="#" style="margin-left: 83px;">其他</a>
+										</p>
+
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<a a href="#" class="title_a">语言·留学</a>
+							<p>
+								<a href="#">实用英语</a>
+								<a href="#">雅思</a>
+								<a href="#">托福</a>
+							</p>
+							<em>></em>
+							<div class="hide">
+								<ul>
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">实用英语</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">英语口语</a>
+											<a href="#">学术英语</a>
+											<a href="#">新概念英语</a>
+											<a href="#">青少年英语</a>
+											<a href="#">词汇语法</a>
+											<a href="#">职场英语</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">出国留学</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">雅思</a>
+											<a href="#">托福</a>
+											<a href="#">K12留学</a>
+											<a href="#">研究生留学</a>
+											<a href="#">留学指导</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">国内考试</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">英语四六级</a>
+											<a href="#">其他英语应试</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">日语</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">日语基础</a>
+											<a href="#">日语初级</a>
+											<a href="#">日语中高级</a>
+											<a href="#">兴趣日语</a>
+											<a href="#">日语考试</a>
+											<a href="#">日语留学</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">韩语</a>
+										<p>
+											<a href="#" style="margin-left: 52px;">韩语零基础</a>
+											<a href="#">韩语初级</a>
+											<a href="#">韩语中高级</a>
+											<a href="#">旅游韩语</a>
+											<a href="#">韩流文化</a>
+											<a href="#">TOPIK考试／留学</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">小语种</a>
+										<p>
+											<a href="#" style="margin-left: 34px;">语法</a>
+											<a href="#">德语</a>
+											<a href="#">西班牙语</a>
+											<a href="#">葡萄牙语</a>
+											<a href="#">方言</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<a a href="#" class="title_a">职业·考试</a>
+							<p>
+								<a href="#">公务员</a>
+								<a href="#">教师考试</a>
+							</p>
+							<em>></em>
+
+							<div class="hide">
+								<ul>
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">公考求职 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">公务员</a>
+											<a href="#">事业单位</a>
+											<a href="#">教师考试</a>
+											<a href="#">金融银行</a>
+											<a href="#">警法考试</a>
+											<a href="#">企业招聘/其他招考</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">法学院 </a>
+										<p>
+											<a href="#" style="margin-left: 70px;">法律硕士</a>
+											<a href="#">司法考试</a>
+											<a href="#">法律实务</a>
+											<a href="#">趣味学法</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">财会金融 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">会计从业</a>
+											<a href="#">会计职称</a>
+											<a href="#">注册会计师</a>
+											<a href="#">国际证书</a>
+											<a href="#">金融类从业</a>
+											<a href="#">会计实务操作</a>
+										</p>
+										<p style="margin-top: -15px;margin-left: 125px;">
+											<a href="#">其他财经类考试</a>
+										</p>
+									</li>
+									<br/>
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">医疗卫生 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">执业药师</a>
+											<a href="#">执业医师</a>
+											<a href="#">执业护士</a>
+											<a href="#">卫生资格</a>
+											<a href="#">其他医疗类培训</a>
+											<a href="#">妇幼课堂</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">建造工程 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">一级建造师</a>
+											<a href="#">二级建造师</a>
+											<a href="#">消防工程师</a>
+											<a href="#">工程造价（实操）</a>
+											<a href="#">工程施工（技能）</a>
+										</p>
+
+										<p style="margin-left:124px;margin-top: -10px;">
+											<a href="#">其他建工类培训</a>
+										</p>
+
+									</li>
+									<br/>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">职业技能 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;float:left">人力资源</a>
+											<a href="#">心理咨询</a>
+											<a href="#">计算机等级考试</a>
+											<a href="#">办公软件</a>
+											<a href="#">技工技能</a>
+											<a href="#">企业培训</a>
+											<a href="#">创业教育</a>
+
+										</p>
+
+										<p style="margin-left:124px;margin-top: -10px;">
+											<a href="#">其他</a>
+										</p>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<a a href="#" class="title_a">升学·考研</a>
+							<p>
+								<a href="#">考研</a>
+								<a href="#">大学</a>
+								<a href="#">高中</a>
+							</p>
+							<em>></em>
+							<div class="hide">
+								<ul>
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">考研 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">规划指导</a>
+											<a href="#">考研英语</a>
+											<a href="#">考研政治</a>
+											<a href="#">考研数学</a>
+											<a href="#">专业课</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">大学 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">自考</a>
+											<a href="#">专升本</a>
+
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">高中 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">高考备战</a>
+											<a href="#">高二</a>
+											<a href="#">高一</a>
+
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">初中 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">中考备战</a>
+											<a href="#">初二</a>
+											<a href="#">初一</a>
+
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">小学 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">语文</a>
+											<a href="#">数学</a>
+											<a href="#">英语</a>
+											<a href="#">其他</a>
+											<a href="#">小升初备战</a>
+
+										</p>
+
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<a a href="#" class="title_a">兴趣·生活</a>
+							<p>
+								<a href="#">摄影</a>
+								<a href="#">乐器演奏</a>
+								<a href="#">美妆</a>
+							</p>
+							<em>></em>
+							<div class="hide">
+								<ul>
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">投资理财 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">证券投资</a>
+											<a href="#">期权期货</a>
+											<a href="#">外汇衍生</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">音乐乐器 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">音乐基础</a>
+											<a href="#">唱歌发声</a>
+											<a href="#">音乐制作</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">文艺修养 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">摄影</a>
+											<a href="#">书法</a>
+											<a href="#">棋牌</a>
+											<a href="#">益智休闲</a>
+											<a href="#">传统文化</a>
+											<a href="#">手工手艺</a>
+											<a href="#">精品公开课</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">运动健康 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">体育休闲</a>
+											<a href="#">健身训练</a>
+											<a href="#">舞蹈健美</a>
+											<a href="#">武术格斗</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">生活百科 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">婚恋交友</a>
+											<a href="#">家居家装</a>
+											<a href="#">时尚美妆</a>
+											<a href="#">美食烹饪</a>
+											<a href="#">养生保健</a>
+											<a href="#">动植育养</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+									<li>
+										<a href="title_hide_a" style="font-weight: bold;float:left">母婴亲子 </a>
+										<p>
+											<a href="#" style="margin-left: 52px;">科学孕产</a>
+											<a href="#">育儿护理</a>
+											<a href="#">亲子启蒙</a>
+											<a href="#">家庭教育</a>
+											<a href="#">其他</a>
+										</p>
+
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+				<div id="obj_progess">
+					<p>跟进你的学习进度</p>
+					<div class="progess_bg"></div>
+					<Button type="button" class="sub_Btn" />登陆</Button>
+				</div>
+			</div>
+
+<!--编写直播课堂-->
+<div id="middle_hobby_nav">
+	<div id="nav_main">
+		<div class="nav_VideoPlay">
+			<ul>
+				<li>
+					互联网产品
+					<div></div>
+				</li>
+
+				<li>
+					编程语言
+					<div></div>
+				</li>
+
+				<li>
+					移动开发
+					<div></div>
+				</li>
+
+				<li>
+					编程语言
+					<div></div>
+				</li>
+
+				<li>
+					软件测试
+					<div></div>
+				</li>
+
+				<li>
+					大数据
+					<div></div>
+				</li>
+
+				<li class="li_last">
+					兴趣职场
+					<div></div>
+				</li>
+			</ul>
+			<Button class="bobbyBtn">修改兴趣</Button>
+		</div>
+	</div>
+</div>
+
+<div id="net">
+<div id="net_main">
+	<div class="recently_play">
+		<h2>最近直播</h2>
+		<div class="play_screen">
+			<img src="img/net_screen01.jpg" />
+			<div class="shadow_top">
+				<p class="course_name">多媒体设计:内部框架应用</p>
+				<div id="times_container" style="">
+
+					距离上课：<span id="times_day" style="color:#188EEE"></span>天
+					<span id="times_hour" style="color:#188EEE"></span>时
+					<span id="times_minute" style="color:#188EEE"></span>分
+					<span id="second" style="color:#188EEE"></span>秒
+
+				</div>
+				<Button class="report">立即报名</Button>
+			</div>
+
+			<div class="shadow_bottom">
+				<img src="img/banner01.jpg" />
+				<p>andy老师</p>
+				<a href="#">
+					来自课程:Axure RP产品设计公开课
+					<em>></em>
+				</a>
+			</div>
+		</div>
+
+						<!--右边课程导航开始-->
+		<div class="content_main">
+				<ul>
+					<li>
+						<div class="dotted"></div>
+						<div class="blue_dotted"></div>
+						<a href="#">多媒体设计:内部框架应用</a>
+					</li>
+					<!--注意这里需要添加功能-->
+				</ul>
+		</div>
+					
+	
+	</div>
+	
+		<div class="Course">
+			<ul>
+				<h2>数据分析</h2>
+				
+				<li>
+					<img src="img/net01.jpg" />
+					<a href="#" class="course_a_title">数据化运营实战</a>
+					<span class="price">￥29.90</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net02.jpg" />
+					<a href="#" class="course_a_title">数据分析的基本方法及实践</a>
+					<span class="price">￥29.90</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net03.jpg" />
+					<a href="#" class="course_a_title">迅雷产品总监：数据运营，我们踩过的那些坑</a>
+					<span class="price" style="color:green">免费</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net04.jpg" />
+					<a href="#" class="course_a_title">【名师直播】产品经理如何用好数据这把双刃剑</a>
+					<span class="price">￥18.00</span>
+					<a href="#" class="course_a_place">腾讯课堂产品学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net05.jpg" />
+					<a href="#" class="course_a_title">互联网产品的数据埋点设计</a>
+					<span class="price">￥12.09</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+			</ul>
+		</div>
+	<!--
+    	作者：offline
+    	时间：2017-09-02
+    	描述：产品策划
+    -->
+	<div class="Course" >
+			<ul>
+				<h2>产品策划</h2>
+				<li>
+					<img src="img/net06.png" />
+					<a href="#" class="course_a_title">前腾讯用户研究专家手把手教你做用户研究【腾讯课堂+起院】</a>
+					<span class="price">￥699.00</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net07.png" />
+					<a href="#" class="course_a_title">产品经理如何写一份技术型PRD</a>
+					<span class="price">￥29.90</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net08.png" />
+					<a href="#" class="course_a_title">产品经理必备的4大思维实战训练</a>
+					<span class="price">￥29.90</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net09.png" />
+					<a href="#" class="course_a_title">产品经理的逆向思维训练</a>
+					<span class="price">￥18.00</span>
+					<a href="#" class="course_a_place">腾讯课堂产品学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net10.png" />
+					<a href="#" class="course_a_title">腾讯高级产品经理教你巧用产品成长曲线优化运营</a>
+					<span class="price">￥12.09</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+				
+				<li>
+					<img src="img/net11.png" />
+					<a href="#" class="course_a_title">前360高级产品经理：四步做好项目管理</a>
+					<span class="price">￥29.00</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net12.png" />
+					<a href="#" class="course_a_title">产品高手修炼：聊聊产品思维那点事</a>
+					<span class="price">￥29.90</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net13.png" />
+					<a href="#" class="course_a_title">以“用户使用流程”为核心做竞品分析</a>
+					<span class="price">￥5.90</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net14.png" />
+					<a href="#" class="course_a_title">产品经理如何与程序员高效沟通</a>
+					<span class="price">￥18.00</span>
+					<a href="#" class="course_a_place">腾讯课堂产品学院</a>
+					<div class="hide"></div>
+				</li>
+
+				<li>
+					<img src="img/net15.png" />
+					<a href="#" class="course_a_title">30天手把手教你做一个APP【腾讯课堂+起点学院联合出品】</a>
+					<span class="price">￥12.09</span>
+					<a href="#" class="course_a_place">起点学院</a>
+					<div class="hide"></div>
+				</li>
+			</ul>
+	</div>
+	
+	<div class="all_course"><a href="#">查看互联网产品类目全部共 262 门课程 </a>></div>
+	
+
+
+</div>
+	<div id="footer">
+		<div id="footer_main">
+			<div class="footer_main_top">
+				<p class="title">合作链接</p>
+				
+				<p class="title2">
+					<a href="#">腾讯大学</a> 
+					<a href="#">腾讯网教育频道</a> 
+					<a href="#">腾讯大讲堂</a>    
+					<a href="#">腾讯精品课</a>   
+					<a href="#">腾讯电脑管家</a>  
+					<a href="#">QQ智慧校园</a>   
+					<a href="#">环球网校</a>   
+					<a href="#">QQ音乐</a>   
+					<a href="#">QQ浏览器</a>
+					<a href="#">企鹅FM</a>   
+					<a href="#">学神IT教育</a> 
+				</p>
+				
+				<p class="title2">
+					<a href="#">中华考试网</a> 
+					<a href="#">云中帆教育</a>    
+					<a href="#">腾讯微云</a>   
+					<a href="#">天下网校</a>  
+					<a href="#">技成培训网</a>   
+					<a href="#">为课网校</a>   
+					<a href="#">中大网校</a>   
+					<a href="#">起点学院</a>
+					<a href="#">人人都是产品经理</a>   
+					<a href="#">厚学网</a> 
+					<a href="#">课工厂</a> 
+				</p>
+				
+				<p class="title2">
+					<a href="#">公务员考试网</a> 
+					<a href="#">新东方在线</a>    
+					<a href="#">中公公务员</a>   
+					<a href="#">学科网</a>  
+					<a href="#">233网校</a>   
+					<a href="#">我要自学网</a>   
+				</p>
+				
+			</div>
+			<hr color="#4A4B4C" />
+			<div class="footer_main_top2">
+				<p  align="center">
+				<img src="img/footer_logo.png" width="40px" height="40px" />
+				</p>
+				<br />
+				<p align="center">Copyright © 2017 Tencent. All Rights Reserved.</p>
+				<br />
+				<p align="center"  class="title3">深圳市腾讯计算机系统有限公司 版权所有 | 
+					<a href="#">腾讯课堂服务协议</a> | 
+					<a href="#">站点地图</a> | 
+					<a href="#">侵权投诉</a> | 
+					<a href="#">帮助</a>
+				</p>
+			</div>
+		</div>
+</div>
+</div>
+
+<!--
+	作者：offline
+	时间：2017-09-02
+	描述：这张网页出现问题底部为放入该放的位置单独放
+-->
+
+
+
+</body>
+</html>
+
+<!--
+	作者：offline
+	时间：2017-08-31
+	描述：这个是写的时间倒计时的JS代码
+-->
+
+<script type="text/javascript" language="javascript">
+	setTimeout("count_down()", 1000); //设置每一秒调用一次倒计时函数
+
+	//获取容器元素 var times_container = document.getElementById("times_container");
+
+	//根据天，时，分，秒的ID找到相对应的元素
+
+	var time_day = document.getElementById("times_day");
+
+	var time_hour = document.getElementById("times_hour");
+
+	var time_minute = document.getElementById("times_minute");
+
+	var time_second = document.getElementById("second");
+
+	var time_end = new Date("2017/10/04 09:21:00"); // 设定活动结束结束时间
+
+	time_end = time_end.getTime();
+
+	//定义倒计时函数
+
+	function count_down() {
+
+		var time_now = new Date(); // 获取当前时间
+
+		time_now = time_now.getTime();
+
+		var time_distance = time_end - time_now; // 时间差：活动结束时间减去当前时间  
+
+		var int_day, int_hour, int_minute, int_second;
+
+		if(time_distance >= 0) {
+
+			// 相减的差数换算成天数  
+
+			int_day = Math.floor(time_distance / 86400000)
+
+			time_distance -= int_day * 86400000;
+
+			// 相减的差数换算成小时
+
+			int_hour = Math.floor(time_distance / 3600000)
+
+			time_distance -= int_hour * 3600000;
+
+			// 相减的差数换算成分钟  
+
+			int_minute = Math.floor(time_distance / 60000)
+
+			time_distance -= int_minute * 60000;
+
+			// 相减的差数换算成秒数 
+
+			int_second = Math.floor(time_distance / 1000)
+
+			// 判断小时小于10时，前面加0进行占位
+
+			if(int_hour < 10)
+
+				int_hour = "0" + int_hour;
+
+			// 判断分钟小于10时，前面加0进行占位     
+
+			if(int_minute < 10)
+
+				int_minute = "0" + int_minute;
+
+			// 判断秒数小于10时，前面加0进行占位
+
+			if(int_second < 10)
+
+				int_second = "0" + int_second;
+
+			// 显示倒计时效果      
+
+			time_day.innerHTML = int_day;
+
+			time_hour.innerHTML = int_hour;
+
+			time_minute.innerHTML = int_minute;
+
+			time_second.innerHTML = int_second;
+
+			setTimeout("count_down()", 1000);
+
+		} else {
+
+			//如果您想在活动结束后提示什么信息，就写在下边的单引号内
+
+			times_container.innerHTML = '对不起，该课程已经下架！';
+
+		}
+
+	}
+</script>

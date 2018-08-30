@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>QQ注册</title>
+		<link rel="shortcut icon" href="img/reg_shortlogo.ico" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script type="text/javascript" src="js/registeryz.js"/></script>
+		<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/register.js"/></script>
+		
+		<style>
+			@font-face {
+				font-family: 'iconfont';
+				src: url('tengxun_header/iconfont.eot');
+				src: url('tengxun_header/iconfont.eot?#iefix') format('embedded-opentype'), 				url('tengxun_header/iconfont.woff') format('woff'), url('tengxun_header/iconfont.ttf') 				format('truetype'), url('tengxun_header/iconfont.svg#iconfont') format('svg');
+			}
+			
+			@font-face {
+				font-family: 'iconfont';
+				src: url('other/iconfont.eot');
+				src: url('other/iconfont.eot?#iefix') format('embedded-opentype'), 				
+				url('other/iconfont.woff') format('woff'), url('other/iconfont.ttf') format('truetype'), 				url('other/iconfont.svg#iconfont') format('svg');
+			}
+			
+			.iconfont {
+				font-family: "iconfont" !important;
+				font-size: 18px;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="containner">
+			<div id="containner_main">
+				<div id="obj"><!--焦点图部分-->
+				    <ul id="oul">
+				        <li><img src="img/regbanner01.jpg"></li>
+				        <li><img src="img/regbanner02.jpg"></li>
+				        <li><img src="img/regbanner03.jpg"></li>
+				    </ul>
+				</div>
+				
+				<div id="logo">
+					<img src="img/qq-logo.png">
+					<em>QQ</em>
+				</div>
+				
+				<div id="reg-area">
+					<ul>
+						<li class="li1">
+							<div class="div1">QQ靓号</div>
+							<img src="img/reg_qq_vip.png" />
+							<div class="hide">
+								<input type="text" placeholder="搜索QQ靓号,如'1992'，'520' " />
+								<Button><i class="iconfont">&#xe606;</i></Button>
+								<p>
+									<a href="#">生日</a>
+									<a href="#">星座</a>
+									<a href="#">爱情</a>
+									<a href="#">手机	</a>
+								</p>
+							</div>
+						</li>
+						
+						<li class="li2" onclick="window.open()"> <!--使用邮箱登陆-->
+							<i class="iconfont">&#xe603;</i>
+							<em>邮箱账号</em>
+						</li>
+						
+						<li class="li3">
+							<span>简体中文</span>
+							<em></em>
+							<div class="hide">
+								<a href="registerEnglish.html">English</a>
+							</div>
+						</li>
+						
+						<li class="li3">
+							<span>意见反馈</span>
+							
+						</li>
+					</ul>
+					
+					<div class="biger_title">欢迎注册QQ</div>
+					<div class="big_title">每一天，乐在沟通。</div>
+					<a href="" class="free_number">免费靓号</a>
+					<form action="#" method="post" onsubmit="return  checkAll()">
+						<input type="text" name="nickname" id="nickname" class="reg_nickname" placeholder="呢称" onblur="checkNickName()"/>
+						<div id="nicknameId"></div>
+						<input type="password" name="password" id="pwd" class="reg_nickname" placeholder="密码" onblur="checkPassword()"/>
+						<div id="pwdId"></div>
+						
+						<input type="text" name="tel" id="tel" class="reg_nickname" placeholder="手机号码" onblur="checkTel()"/>
+						<div id="telId"></div>
+						<input type="text" name="yzm" id="yzm" class="reg_nickname" placeholder="验证码" />
+						<Button type="text" name="yzmButton" id="yzmButton" class="reg_nickname" />1234</Button>
+						<input type="submit" name="submit" id="submit" class="reg_nickname" value="立即注册" /><br/>
+						<div class="wrapper" style="display:inline-block ;">
+						    <div class="checkbox-box">
+						      <input  type="checkbox"  class="checkbox" id="chx"  onClick="checkchx()"/>
+						      <span></span>
+						    </div>
+							<p class="check_p">同时开通QQ空间</p> 
+						</div>
+						
+						<div class="wrapper" style="width:800px">
+						    <div class="checkbox-box">
+						      <input  type="checkbox"  class="checkbox"  id="chx2" onClick="checkchx2()" />
+						      <span></span>
+						    </div>
+							<p class="check_p">我已阅读并同意相关服务条款和隐私政策  </p> 
+							
+						</div>
+							<div class="wrapper_down" />
+							<div class="wrapper_hide">
+								<a href="">《QQ号码规则》</a>
+								<a href="">《隐私政策》</a>
+							</div>
+								<p style="width:500px;clear:both;margin-top:50px;margin-bottom:50px;margin-left:-230px;font-size: 14px;color: #bbb;">Copyright © 1998-2017Tencent All Rights Reserved</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
